@@ -1,0 +1,39 @@
+/* CONTENEDORES DE IMAGENES */
+.contenedorimagen {
+    position:relative;
+    width:600px;
+    height:600px;
+}
+
+.banner {
+    display:block;
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+.textoimagen{
+    position:absolute;
+    width:100%;
+    height:0;
+    left:0;
+    top:0;
+    background:rgba(10, 20, 20, .7);
+    overflow:hidden;
+    transition:.5s ease;
+}
+.contenedorimagen:hover .textoimagen {
+    height: 100%;
+  }
+
+
+.flex {
+    display:flex;
+    flex-flow:row wrap;
+    justify-content:center;
+}
+
+/* SECCIONES PRINCIPALES */
+section {
+    max-width:100vw;
+    background:#eca;
+}

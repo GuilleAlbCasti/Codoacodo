@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--CONTACTANDO LA PAGINA DE ESTILOS-->
+    <link rel="stylesheet" href="css/generales.css">
+    <link rel="stylesheet" href="css/estilosnewsletter.css">
+    <!--VINCULANDO LAS FUENTES DE GOOGLEFONTS-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;700&display=swap" rel="stylesheet">
+    <!--VINCULAR ICONOS DE FONTAWESOME-->
+
+    <title>Newsletter - Cine Codo 4.0</title>
+</head>
+<body>
+    <header>
+        <img src="img/logostudio.svg" alt="logo studio codo 4.0">
+        <h1>STUDIO CODO 4.0</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html" target="_self">Inicio</a></li>
+            <li><a href="peliculas.html" target="_self">Películas</a></li>
+            <li><a href="ubicaciones.html" target="_self">Nuestros Cines</a></li>
+            <li><a href="candybar.html" target="_self">Candybar</a></li>
+            <li><a href="newsletter.html" target="_self">Contactanos</a></li>
+        </ul>
+    </nav>
+    <div class="contmain">
+        <h2 class="titulo">Suscribite a nuestra newsletter!</h2>
+        <div class="contform">
+            <div class="contizq">
+                <h3>Datos personales</h3>
+                <form action="link" method="post" target="_blank">
+                    <p><label for="nombres">Nombre/s:</label>
+                        <input size="23" type="text" name="varnombre" id="nombres" required placeholder="Juan">
+                    </p>
+                    <p>
+                        <label for="apellidos">Apellido/s:</label>
+                        <input size="23" type="text" name="varapellido" id="apellidos" required placeholder="Pérez">
+                    </p>
+                    <p>
+                        <label for="direccion">Dirección:</label>
+                        <input size="23" type="text" name="vardireccion" id="direccion" required placeholder="Av.Siempreviva">
+                    </p>
+                    <p>
+                        <label for="altura">número:</label>
+                        <input size="6" type="number" name="varaltura" id="altura" required placeholder="742">
+                    </p>
+                    <p>
+                        <label for="codigopostal">Código Postal:</label>
+                        <input size="6" type="number" name="varcodigopostal" id="codigopostal" required placeholder="1234">
+                    </p>
+                    <p>
+                        <label for="email">Email:</label>
+                        <input size="23" type="email" name="varemail" id="email" required placeholder="JuanPerez@dominio.com">
+                    </p>
+
+                    <p contenedor="selector">
+                        <label>Seleccioná tu provincia:</label>
+                        <select required name="varprovincia">
+                            <option value="1">BUENOS AIRES</option>
+                            <option value="2">CATAMARCA</option>
+                            <option value="3">CHACO</option>
+                            <option value="4">CHUBUT</option>
+                            <option value="5">CIUDAD AUTONOMA DE Bs As</option>
+                            <option value="6">CORDOBA</option>
+                            <option value="7">CORRIENTES</option>
+                            <option value="8">ENTRE RIOS</option>
+                            <option value="9">FORMOSA</option>
+                            <option value="10">JUJUY</option>
+                            <option value="11">LA PAMPA</option>
+                            <option value="12">LA RIOJA</option>
+                            <option value="13">MENDOZA</option>
+                            <option value="14">MISIONES</option>
+                            <option value="15">NEUQUEN</option>
+                            <option value="16">RIO NEGRO</option>
+                            <option value="17">SALTA</option>
+                            <option value="18">SAN LUIS</option>
+                            <option value="19">SANTA CRUZ</option>
+                            <option value="20">SANTA FE</option>
+                            <option value="21">SANTIAGO DEL ESTERO</option>
+                            <option value="22">TIERRA DEL FUEGO</option>
+                        </select>
+                    </p>
+                    
+                    <p>
+                        <label for="cumpleanos">Fecha de cumpleaños:</label>
+                        <input type="date" name="varcumpeanos" id="cumpleanos">
+                    </p>
+                    <br>
+                    <br>
+                  
+                    <h4>Elegí tu estilo de suscripción</h4>
+
+                    <p class="check"><label for="gratis">gratuita</label>
+                        <input type="radio" id="gratis" name="suscripcion" value="subgratis">
+                    </p>
+                    <p class="check">
+                        <label for="pago">Pro! Cinema Codo</label>
+                        <input type="radio" id="pago" name="suscripcion" value="subpago">
+                    </p>
+                    <h4>Selecciona tu preferencia de novedades:</h4>
+
+                    <p class="check">
+                        <label for=aventura>Aventura/Acción</label>
+                        <input type="checkbox" id="aventura" name="preferencia1" value="aventura">
+                    </p>
+                    <p class="check">
+                        <label for="comedia"> Comedia</label>
+                        <input type="checkbox" id="comedia" name="preferencia2" value="comedia">
+                    </p>
+                    <p class="check">
+                    <label for="romantica"> Romantica</label>
+                    <input type="checkbox" id="romantica" name="preferencia3" value="3">
+                </p>
+                <p class="check">
+                    <label for="terror">Terror / Suspenso</label>
+                    <input type="checkbox" id="terror" name="preferencia4" value="4">
+                </p>
+                <p class="check" contenedor="drama">
+                    <label for="drama"> Drama</label>
+                    <input type="checkbox" id="drama" name="preferencia5" value="5">
+                </p>
+                </form>
+            </div>
+            <div class="contder">
+
+                <h3>Datos de usuario</h3>
+                <p>
+                    <label for="usuario">Nombre de usuario :</label>
+                    <input size="15" type="text" name="varusuario" id="usuario" required>
+                </p>
+                <p>
+                    <label for="password">Elegí tu contraseña :</label>
+                    <input size="15" type="password" name="varpassword" id="password" required>
+                </p>
+                <p>
+                    <label for="cpassword">Confirmá tu contraseña :</label>
+                    <input size="15" type="password" name="varpassword1" id="cpassword" required>
+                </p>
+              <br>
+                <p class="botones">
+                    <button type="submit" value="Enviar Datos">ENVIAR DATOS</button>
+                    <button type="reset" value="Borrar los datos">REINICIAR</button>
+                </p>
+            </div>
+        </div>
+
+
+
+    </div>
+<footer>
+    <ul>
+        <li>Calle Siempreviva 742, Springfield</li>
+        <li>contacto@studiocodo40.com.ar</li>
+        <li>+54911 0303 4566</li>
+        <li></li>
+        <li></li>
+    </ul>
+</footer>
+
+</body>
+
+</html>
