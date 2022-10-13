@@ -1,3 +1,52 @@
+/* CONTENEDORES DE IMAGENES */
+
+/*contenedor principal que define el tamaño de las imàgenes*/
+.contenedorimagen {
+  position: relative;
+  width: 600px;
+  height: 600px;
+}
+
+/*caracterìsticas de las imàgenes dentro de los contenedores*/
+.banner {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/*contenedor que aparece sobre la imàgen de cada pelicula semitrasparente */
+.textoimagen {
+  position: absolute;
+  width: 100%;
+  height: 0;
+  left: 0;
+  top: 0;
+  background: rgba(10, 20, 20, .7);
+  overflow: hidden;
+  transition: .5s ease;
+}
+
+/* contenedor que organiza el texto dentro del cuadro de pelicula */
+.divtexto {
+  position: relative;
+  text-align: left;
+  padding: 1em;
+}
+
+/*estado hover donde el contenedor semitrasparente se hace presente*/
+.contenedorimagen:hover .textoimagen {
+  height: 100%;
+}
+
+/*contenedor de todas las imàgens de pelìculas ingresadas en flex*/
+.flex {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+
 /* CSS PARA EL FOOTER */
 
 footer {
