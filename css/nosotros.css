@@ -26,7 +26,7 @@ body {
   .about-section {
     padding: 50px;
     text-align: center;
-    background-color: #474e5d;
+   background-color: #070617;
     color: white;
   }
   
@@ -121,7 +121,20 @@ footer h3 {
   margin: 0;
   padding: 0;
 }
-.footer .col ul li {
+/* aca cambia */
+.footer .col ul li a{
+  color: #999999;
+  font-size: 14px;
+  font-family: inherit;
+  font-weight: bold;
+  padding: 5px 0px 5px 0px;
+  cursor: pointer;
+  transition: .2s;
+  -webkit-transition: .2s;
+  -moz-transition: .2s;
+}
+
+.footer .col ul li{
   color: #999999;
   font-size: 14px;
   font-family: inherit;
@@ -136,7 +149,13 @@ footer h3 {
   display: inline-block;
   padding-right: 5px !important;
 }
-
+/* aca cambia */
+.footer .col ul li a:hover {
+  color: #ffffff;
+  transition: .1s;
+  -webkit-transition: .1s;
+  -moz-transition: .1s;
+}
 .footer .col ul li:hover {
   color: #ffffff;
   transition: .1s;
