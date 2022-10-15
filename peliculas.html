@@ -2,151 +2,258 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--CONTACTANDO LA PAGINA DE ESTILOS-->
-    <link rel="stylesheet" href="css/generales.css">
-    <link rel="stylesheet" href="css/peliculas.css">
-    <!--VINCULANDO LAS FUENTES DE GOOGLEFONTS-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;700&display=swap" rel="stylesheet">
-    <!--VINCULAR ICONOS DE FONTAWESOME-->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--CONTACTANDO LA PAGINA DE ESTILOS-->
+  <link rel="stylesheet" href="css/generales.css">
+  <link rel="stylesheet" href="css/peliculas.css">
+  <!--VINCULANDO LAS FUENTES DE GOOGLEFONTS-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;700&display=swap" rel="stylesheet">
+  <!--VINCULAR ICONOS DE FONTAWESOME-->
 
-    <title>Newsletter - Cine Codo 4.0</title>
+  <title>Newsletter - Cine Codo 4.0</title>
+
+  <script type="text/javascript">
+    function cargarIframe(url) {
+      document.getElementById("tlerfrm").style.visibility = "visible";
+      document.getElementById("iframetrailer").src = url;
+    }
+
+    function cerrarIframe() {
+      document.getElementById("tlerfrm").style.visibility = "hidden";
+      document.getElementById("iframetrailer").src = "";
+    }
+//link del trailer de sinister "https://www.youtube.com/embed/_kbQAJR9YWQ"
+  </script>
 </head>
 
 <body>
-    <header>
-        <img src="img/logostudio.svg" alt="logo studio codo 4.0">
-        <h1>STUDIO CODO 4.0</h1>
-    </header>
-    <nav>
-        <ul>
-            <li><a href="index.html" target="_self">Inicio</a></li>
-            <li><a href="peliculas.html" target="_self">Películas</a></li>
-            <li><a href="ubicaciones.html" target="_self">Nuestros Cines</a></li>
-            <li><a href="nosotros.html" target="_self">Nosotros</a></li>
-            <li><a href="newsletter.html" target="_self">Contactanos</a></li>
+  <header>
+    <img src="img/logostudio.svg" alt="logo studio codo 4.0">
+    <h1>STUDIO CODO 4.0</h1>
+  </header>
+  <nav>
+    <ul>
+      <li><a href="index.html" target="_self">Inicio</a></li>
+      <li><a href="peliculas.html" target="_self">Películas</a></li>
+      <li><a href="ubicaciones.html" target="_self">Nuestros Cines</a></li>
+      <li><a href="nosotros.html" target="_self">Nosotros</a></li>
+      <li><a href="newsletter.html" target="_self">Contactanos</a></li>
 
-        </ul>
-    </nav>
+    </ul>
+  </nav>
 
-      <section class="flex">
-        <div class="contenedorimagen">
-            <img class="banner" src="img/Interestelar-002.jpg"
-                alt="Imagen de los 2 personajes principales de la película Interstellar">
-            <div class="textoimagen">
-                <div class="divtexto">
-                    <h2>Interstellar</h2>
-                    <p>Sipnosis: </p>
-                    <p>Un grupo de científicos y exploradores, encabezados por Cooper, se embarcan en un viaje espacial
-                        para encontrar un lugar con las condiciones necesarias para reemplazar a la Tierra y comenzar
-                        una nueva vida allí. La Tierra está llegando a su fin y este grupo necesita encontrar un planeta
-                        más allá de nuestra galaxia que garantice el futuro de la raza humana.</h3>
-                    </p>
-                    <hr>
-                    <h4>Dirección:Christopher Nolan <br>
-                        Protagonistas:Matthew McConaughey <br>
-                        Anne Hathaway <br>
-                        Jessica Chastain <br>
-                        Bill Irwin <br>
-                        Ellen Burstyn <br>
-                        Michael Caine <br>
-                        Matt Damon</h4>
-                </div>
-            </div>
+  <!--el siguiente div contiene al iframe donde se reproducen los trailers según el click-->
+  <div class="trailerframe" id="tlerfrm"><iframe id="iframetrailer" width="100%" height="95%" src=""
+      title="YouTube video player" frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
+    <p><button onClick='cerrarIframe()'>Cerrar Reproductor</button></p>
+  </div>
+
+
+  <section class="flex">
+    <div class="contenedorimagen">
+      <img class="banner" src="img/Interestelar-002.jpg"
+        alt="Imagen de los 2 personajes principales de la película Interstellar">
+      <div class="textoimagen">
+        <div class="divtexto">
+          <h2>Interstellar</h2>
+          <p>Sipnosis: </p>
+          <p>Un grupo de científicos y exploradores, encabezados por Cooper, se embarcan en un viaje espacial
+            para encontrar un lugar con las condiciones necesarias para reemplazar a la Tierra y comenzar
+            una nueva vida allí. La Tierra está llegando a su fin y este grupo necesita encontrar un planeta
+            más allá de nuestra galaxia que garantice el futuro de la raza humana.</h3>
+          </p>
+          <hr>
+          <h4>Dirección:Christopher Nolan <br>
+            Protagonistas:Matthew McConaughey <br>
+            Anne Hathaway <br>
+            Jessica Chastain <br>
+            Bill Irwin <br>
+            Ellen Burstyn <br>
+            Michael Caine <br>
+            Matt Damon</h4>
         </div>
-        <div class="contenedorimagen">
-            <img class="banner" src="img/Avatar2001.jpg"
-                alt="Imagen tapa de la película Avatar con los 2 personajes principales en el frente">
-            <div class="textoimagen">
-                <div class="divtexto">
-                    <h2>Avatar</h2>
-                    <p>Sipnosis: </p>
-                    <p>En un exuberante planeta llamado Pandora viven los Na'vi, seres que aparentan ser primitivos pero
-                        que en realidad son muy evolucionados. Debido a que el ambiente de Pandora es venenoso, los
-                        híbridos humanos/Na'vi, llamados Avatares, están relacionados con las mentes humanas, lo que les
-                        permite moverse libremente por Pandora. Jake Sully, un exinfante de marina paralítico se
-                        transforma a través de un Avatar, y se enamora de una mujer Na'vi.</h3>
-                    </p>
-                    <hr>
-                    <h4>Dirección:James Cameron <br>
-                        Protagonistas Sam Worthington <br>
-                        Zoe Saldaña <br>
-                        Sigourney Weaver <br>
-                        Michelle Rodríguez <br>
-                        Stephen Lang <br>
-                        Giovanni Ribisi <br>
-                        Joel David Moore <br>
-                        C. C. H. Pounder <br>
-                        Wes Studi <br>
-                        Laz Alonso
-                    </h4>
-                </div>
-            </div>
+        <button onClick='cargarIframe("https://www.youtube.com/embed/zSWdZVtXT7E")'>Ver Trailer</button>
+      </div>
+    </div>
+    <div class="contenedorimagen">
+      <img class="banner" src="img/Avatar2001.jpg"
+        alt="Imagen tapa de la película Avatar con los 2 personajes principales en el frente">
+      <div class="textoimagen">
+        <div class="divtexto">
+          <h2>Avatar</h2>
+          <p>Sipnosis: </p>
+          <p>En un exuberante planeta llamado Pandora viven los Na'vi, seres que aparentan ser primitivos pero
+            que en realidad son muy evolucionados. Debido a que el ambiente de Pandora es venenoso, los
+            híbridos humanos/Na'vi, llamados Avatares, están relacionados con las mentes humanas, lo que les
+            permite moverse libremente por Pandora. Jake Sully, un exinfante de marina paralítico se
+            transforma a través de un Avatar, y se enamora de una mujer Na'vi.</h3>
+          </p>
+          <hr>
+          <h4>Dirección:James Cameron <br>
+            Protagonistas Sam Worthington <br>
+            Zoe Saldaña <br>
+            Sigourney Weaver <br>
+            Michelle Rodríguez <br>
+            Stephen Lang <br>
+            Giovanni Ribisi <br>
+            Joel David Moore <br>
+            C. C. H. Pounder <br>
+            Wes Studi <br>
+            Laz Alonso
+          </h4>
         </div>
-        <div class="contenedorimagen">
-            <img class="banner" src="img/topgun2-002.jpg" alt="Imágen tapa de la película TOP GUN 2">
-            <div class="textoimagen">
-                <div class="divtexto">
-                    <h2>Top Gun 2:Maverick</h2>
-                    <p>Sipnosis: </p>
-                    <p>Después de más de treinta años de servicio como uno de los mejores aviadores de la Armada, Pete
-                        "Mavericks" Mitchel (Tom Cruise) se encuentra donde siempre quiso estar: superando los límites
-                        como un valiente piloto de pruebas y esquivando el ascenso de rango, que no le dejaría volar
-                        emplazándolo en tierra. Cuando es destinado a la academia de Top Gun con el objetivo de entrenar
-                        a los pilotos de élite para realizar una peligrosa misión en territorio enemigo, Maverick se
-                        encuentra allí con el joven teniente Bradley Bradshaw (Miles Teller), el hijo de su difunto
-                        amigo "Goose".
-                    </p>
-                    <hr>
-                    <h4>Dirección:Joseph Kosinski <br>
-                        Protagonistas Tom Cruise <br>
-                        Val Kilmer <br>
-                        Miles Teller <br>
-                        Jennifer Connelly <br>
-                        Glen Powell <br>
-                        Lyliana Wray <br>
-                        Ed Harris <br>
-                    </h4>
-                </div>
-                </div>
-            </div>
+        <button onClick='cargarIframe("https://www.youtube.com/embed/5PSNL1qE6VY")'>Ver Trailer</button>
+      </div>
+    </div>
+    <div class="contenedorimagen">
+      <img class="banner" src="img/topgun2-002.jpg" alt="Imágen tapa de la película TOP GUN 2">
+      <div class="textoimagen">
+        <div class="divtexto">
+          <h2>Top Gun 2:Maverick</h2>
+          <p>Sipnosis: </p>
+          <p>Después de más de treinta años de servicio como uno de los mejores aviadores de la Armada, Pete
+            "Mavericks" Mitchel (Tom Cruise) se encuentra donde siempre quiso estar: superando los límites
+            como un valiente piloto de pruebas y esquivando el ascenso de rango, que no le dejaría volar
+            emplazándolo en tierra. Cuando es destinado a la academia de Top Gun con el objetivo de entrenar
+            a los pilotos de élite para realizar una peligrosa misión en territorio enemigo, Maverick se
+            encuentra allí con el joven teniente Bradley Bradshaw (Miles Teller), el hijo de su difunto
+            amigo "Goose".
+          </p>
+          <hr>
+          <h4>Dirección:Joseph Kosinski <br>
+            Protagonistas Tom Cruise <br>
+            Val Kilmer <br>
+            Miles Teller <br>
+            Jennifer Connelly <br>
+            Glen Powell <br>
+            Lyliana Wray <br>
+            Ed Harris <br>
+          </h4>
+        </div>
+        <button onClick='cargarIframe("https://www.youtube.com/embed/zzBIzYmxatU")'>Ver Trailer</button>
+      </div>
+    </div>
 
-            <div class="contenedorimagen">
-                <img class="banner" src="img/blackwidow001.jpg" alt="Imágen tapa de la película Black Widow">
-                <div class="textoimagen">
-                    <div class="divtexto">
-                        <h2>Top Gun 2:Maverick</h2>
-                        <p>Sipnosis: </p>
-                        <p>Después de más de treinta años de servicio como uno de los mejores aviadores de la Armada, Pete
-                            "Mavericks" Mitchel (Tom Cruise) se encuentra donde siempre quiso estar: superando los límites
-                            como un valiente piloto de pruebas y esquivando el ascenso de rango, que no le dejaría volar
-                            emplazándolo en tierra. Cuando es destinado a la academia de Top Gun con el objetivo de entrenar
-                            a los pilotos de élite para realizar una peligrosa misión en territorio enemigo, Maverick se
-                            encuentra allí con el joven teniente Bradley Bradshaw (Miles Teller), el hijo de su difunto
-                            amigo "Goose".
-                        </p>
-                        <hr>
-                        <h4>Dirección:Joseph Kosinski <br>
-                            Protagonistas Tom Cruise <br>
-                            Val Kilmer <br>
-                            Miles Teller <br>
-                            Jennifer Connelly <br>
-                            Glen Powell <br>
-                            Lyliana Wray <br>
-                            Ed Harris <br>
-                        </h4>
-                    </div>
-                    </div>
-                </div>
-    </section>
+    <div class="contenedorimagen">
+      <img class="banner" src="img/blackwidow001.jpg" alt="Imágen tapa de la película Black Widow">
+      <div class="textoimagen">
+        <div class="divtexto">
+          <h2>BlackWidow</h2>
+          <p>Sipnosis: </p>
+          <p>Natasha Romanoff, alias Viuda Negra, se enfrenta a los capítulos más oscuros de su historia cuando surge
+            una peligrosa conspiración relacionada con su pasado. Perseguida por una fuerza que no se detendrá ante nada
+            para acabar con ella, Natasha debe lidiar con su historia como espía y con la estela de relaciones
+            destruidas que dejó atrás mucho antes de convertirse en Vengadora.
+          </p>
+          <hr>
+          <h4>Dirección:Cate Shortland <br>
+            Protagonistas Scarlett Johansson <br>
+            Florence Pugh <br>
+            Rachel Weisz <br>
+            David Harbour <br>
+            William Hurt <br>
+            Ray Winstone
+          </h4>
+        </div>
+        <button onClick='cargarIframe("https://www.youtube.com/embed/gR3JFH_3LhY")'>Ver Trailer</button>
+      </div>
+    </div>
+
+    <div class="contenedorimagen">
+      <img class="banner" src="img/ABeautifulMind.jpg"
+        alt="Imágen principal de 'una mente brillante' con Russell Crowe y  ">
+      <div class="textoimagen">
+        <div class="divtexto">
+          <h2>A Beautiful Mind</h2>
+          <p>Sipnosis: </p>
+          <p>Obsesionado con la búsqueda de una idea matemática original, el brillante estudiante John Forbes Nash
+            (Russell Crowe) llega a Princeton en 1947 para realizar sus estudios de postgrado. Es un muchacho extraño y
+            solitario, al que sólo comprende su compañero de cuarto (Paul Bettany). Por fin, Nash esboza una
+            revolucionaria teoría y consigue una plaza de profesor en el MIT. Alicia Lardé (Jennifer Connelly), una de
+            sus alumnas, lo deja fascinado al mostrarle que las leyes del amor están por encima de las de las
+            matemáticas. Gracias a su prodigiosa habilidad para descifrar códigos es reclutado por Parcher William (Ed
+            Harris), del departamento de Defensa, para ayudar a los Estados Unidos en la Guerra Fría contra la Unión
+            Soviética.
+          </p>
+          <hr>
+          <h4>Dirección: Ron Howard <br>
+            Russell Crowe <br>
+            Jennifer Connelly <br>
+            Ed Harris <br>
+            Paul Bettany
+          </h4>
+        </div>
+        <button onClick='cargarIframe("https://www.youtube.com/embed/9wZM7CQY130")'>Ver Trailer</button>
+      </div>
+    </div>
+
+    <div class="contenedorimagen">
+      <img class="banner" src="img/NakedGun.jpg" alt="Imágen principal de 'Naked Gun' con Leslie Nielsen">
+      <div class="textoimagen">
+        <div class="divtexto">
+          <h2>Naked Gun 33 1/3:The Final Insult</h2>
+          <p>Sipnosis: </p>
+          <p>La noche de los Oscar, ¿quién ganará?, ¿quién perderá?, y por favor, ¿puede alguien quitar a ese imbécil
+            del escenario? ¡Esperen! No se trata de un imbécil normal y corriente. Es el Teniente Frank Drebin,
+            destrozando la ceremonia para detener un plan terrorista que podría ser su final... Y va a convertirse en el
+            principio de toda una locura.
+          </p>
+          <hr>
+          <h4>Dirección:Peter Segal <br>
+            Protagonistas
+            Leslie Nielsen <br>
+            Priscilla Presley <br>
+            Fred Ward <br>
+            George Kennedy <br>
+            Anna Nicole Smith <br>
+            O.J. Simpson
+          </h4>
+
+        </div>
+        <button onClick='cargarIframe("https://www.youtube.com/embed/9BrYBoCk1aw")'>Ver Trailer</button>
+      </div>
+    </div>
+
+    <div class="contenedorimagen">
+      <img class="banner" src="img/MeBeforeYou.jpg" alt="Emilia Clarke y Sam Claflin en 'Yo antes de Ti'">
+      <div class="textoimagen">
+        <div class="divtexto">
+          <h2>Me Before You</h2>
+          <p>Sipnosis: </p>
+          <p>Louisa “Lou” Clark (Emilia Clarke), una chica inestable y creativa, reside en un pequeño pueblo de la
+            campiña inglesa. Vive sin rumbo y va de un trabajo a otro para ayudar a su familia a llegar a fin de mes.
+            Sin embargo, un nuevo trabajo pondrá a prueba su habitual alegría. En el castillo local, se ocupa de cuidar
+            y acompañar a Will Traynor (Sam Claflin), un joven y rico banquero que se quedó paralítico tras un
+            accidente.
+          </p>
+          <hr>
+          <h4>
+            Protagonistas Emilia Clarke <br>
+            Sam Claflin <br>
+            Matthew Lewis <br>
+            Charles Dance <br>
+            Vanessa Kirby <br>
+            Jenna Coleman <br>
+            Janet McTeer <br>
+            Brendan Coyle,
+          </h4>
+
+        </div>
+        <button onClick='cargarIframe("https://www.youtube.com/embed/Eh993__rOxA")'>Ver Trailer</button>
+      </div>
+    </div>
+
+
+  </section>
 
 
 
-    <!-- COMIENZA EL FOOTER  -->
+  <!-- COMIENZA EL FOOTER  -->
 
   <div class="footer">
     <div class="contain">

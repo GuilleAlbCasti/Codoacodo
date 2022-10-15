@@ -7,9 +7,14 @@
 
  .titulo {
     text-align:center;
-    font-size:2em;
+    font-size:3em;
  }
-
+ .about-section {
+  padding: 50px;
+  text-align: center;
+ background-color: #070617;
+  color: white;
+}
 form {
     display:grid;
   grid-template-columns:1fr 1fr;
@@ -53,7 +58,7 @@ form {
 
  .contizq {
     padding:1em;
-    background:#202020;
+    background:#000000;
     box-shadow:0 0 20px #191919
  }
  .contder{
