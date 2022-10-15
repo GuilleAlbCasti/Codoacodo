@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--CONTACTANDO LA PAGINA DE ESTILOS-->
+    <link rel="stylesheet" href="css/generales.css">
+    <link rel="stylesheet" href="css/estilosnewsletter.css">
+    <!--VINCULANDO LAS FUENTES DE GOOGLEFONTS-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;700&display=swap" rel="stylesheet">
+    <!--VINCULAR ICONOS DE FONTAWESOME-->
+
+    <title>Newsletter - Cine Codo 4.0</title>
+</head>
+<body>
+    <header>
+        <img src="img/logostudio.svg" alt="logo studio codo 4.0">
+        <h1>STUDIO CODO 4.0</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html" target="_self">Inicio</a></li>
+            <li><a href="peliculas.html" target="_self">Películas</a></li>
+            <li><a href="ubicaciones.html" target="_self">Nuestros Cines</a></li>
+            <li><a href="nosotros.html" target="_self">Nosotros</a></li>
+            <li><a href="newsletter.html" target="_self">Contactanos</a></li>
+        </ul>
+    </nav>
+    <div class="contmain">
+        <div class="about-section">
+            <h2 class="titulo">Suscribite a nuestra newsletter!</h2>
+        </div>
+        <div class="contform">
+            <div class="contizq">
+                <h3>Datos personales</h3>
+                <form action="link" method="post" target="_blank">
+                    <p><label for="nombres">Nombre/s:</label>
+                        <input size="23" type="text" name="varnombre" id="nombres" required placeholder="Juan">
+                    </p>
+                    <p>
+                        <label for="apellidos">Apellido/s:</label>
+                        <input size="23" type="text" name="varapellido" id="apellidos" required placeholder="Pérez">
+                    </p>
+                    <p>
+                        <label for="direccion">Dirección:</label>
+                        <input size="23" type="text" name="vardireccion" id="direccion" required placeholder="Av.Siempreviva">
+                    </p>
+                    <p>
+                        <label for="altura">número:</label>
+                        <input size="6" type="number" name="varaltura" id="altura" required placeholder="742">
+                    </p>
+                    <p>
+                        <label for="codigopostal">Código Postal:</label>
+                        <input size="6" type="number" name="varcodigopostal" id="codigopostal" required placeholder="1234">
+                    </p>
+                    <p>
+                        <label for="email">Email:</label>
+                        <input size="23" type="email" name="varemail" id="email" required placeholder="JuanPerez@dominio.com">
+                    </p>
+
+                    <p contenedor="selector">
+                        <label>Seleccioná tu provincia:</label>
+                        <select required name="varprovincia">
+                            <option value="1">BUENOS AIRES</option>
+                            <option value="2">CATAMARCA</option>
+                            <option value="3">CHACO</option>
+                            <option value="4">CHUBUT</option>
+                            <option value="5">CIUDAD AUTONOMA DE Bs As</option>
+                            <option value="6">CORDOBA</option>
+                            <option value="7">CORRIENTES</option>
+                            <option value="8">ENTRE RIOS</option>
+                            <option value="9">FORMOSA</option>
+                            <option value="10">JUJUY</option>
+                            <option value="11">LA PAMPA</option>
+                            <option value="12">LA RIOJA</option>
+                            <option value="13">MENDOZA</option>
+                            <option value="14">MISIONES</option>
+                            <option value="15">NEUQUEN</option>
+                            <option value="16">RIO NEGRO</option>
+                            <option value="17">SALTA</option>
+                            <option value="18">SAN LUIS</option>
+                            <option value="19">SANTA CRUZ</option>
+                            <option value="20">SANTA FE</option>
+                            <option value="21">SANTIAGO DEL ESTERO</option>
+                            <option value="22">TIERRA DEL FUEGO</option>
+                        </select>
+                    </p>
+                    
+                    <p>
+                        <label for="cumpleanos">Fecha de cumpleaños:</label>
+                        <input type="date" name="varcumpeanos" id="cumpleanos">
+                    </p>
+                    <br>
+                    <br>
+                  
+                    <h4>Elegí tu estilo de suscripción</h4>
+
+                    <p class="check"><label for="gratis">gratuita</label>
+                        <input type="radio" id="gratis" name="suscripcion" value="subgratis">
+                    </p>
+                    <p class="check">
+                        <label for="pago">Pro! Cinema Codo</label>
+                        <input type="radio" id="pago" name="suscripcion" value="subpago">
+                    </p>
+                    <h4>Selecciona tu preferencia de novedades:</h4>
+
+                    <p class="check">
+                        <label for=aventura>Aventura/Acción</label>
+                        <input type="checkbox" id="aventura" name="preferencia1" value="aventura">
+                    </p>
+                    <p class="check">
+                        <label for="comedia"> Comedia</label>
+                        <input type="checkbox" id="comedia" name="preferencia2" value="comedia">
+                    </p>
+                    <p class="check">
+                    <label for="romantica"> Romantica</label>
+                    <input type="checkbox" id="romantica" name="preferencia3" value="3">
+                </p>
+                <p class="check">
+                    <label for="terror">Terror / Suspenso</label>
+                    <input type="checkbox" id="terror" name="preferencia4" value="4">
+                </p>
+                <p class="check" contenedor="drama">
+                    <label for="drama"> Drama</label>
+                    <input type="checkbox" id="drama" name="preferencia5" value="5">
+                </p>
+                </form>
+            </div>
+            <div class="contder">
+
+                <h3>Datos de usuario</h3>
+                <p>
+                    <label for="usuario">Nombre de usuario :</label>
+                    <input size="15" type="text" name="varusuario" id="usuario" required>
+                </p>
+                <p>
+                    <label for="password">Elegí tu contraseña :</label>
+                    <input size="15" type="password" name="varpassword" id="password" required>
+                </p>
+                <p>
+                    <label for="cpassword">Confirmá tu contraseña :</label>
+                    <input size="15" type="password" name="varpassword1" id="cpassword" required>
+                </p>
+              <br>
+                <p class="botones">
+                    <button type="submit" value="Enviar Datos">ENVIAR DATOS</button>
+                    <button type="reset" value="Borrar los datos">REINICIAR</button>
+                </p>
+            </div>
+        </div>
+
+
+
+    </div>
+<!-- COMIENZA EL FOOTER  -->
+
+<div class="footer">
+    <div class="contain">
+      <div class="col">
+      </div>
+      <div class="col">
+        <h1>Desarrolladores</h1>
+        <ul>
+          <li>Guillermo Castiglioni</li>
+          <li>Gastón Valdez</li>
+          <li>Sebastían Giordano</li>
+        </ul>
+      </div>
+      <div class="col">
+        <h1>Fuentes</h1>
+        <ul>
+          <li><a href=https://codoacodo.bue.edu.ar target=”_blank”>Codo a Codo</a></li>
+          <li><a href=https://www.w3schools.com target=”_blank”>W3 Schools</a></li>
+          <li><a href=https://getbootstrap.com target=”_blank”>Bootstrap</a></li>
+          <li><a href=https://fonts.google.com target=”_blank”>GoogleFonts</a></li>
+          <li><a href=https://github.com target=”_blank”>GitHub</a></li>
+        </ul>
+      </div>
+      <div class="col">
+        <h1>Soporte</h1>
+        <ul>
+          <li>Contactanos</li>
+        </ul>
+      </div>
+      <div class="col">
+        <h1>Acerca de Nosotros</h1>
+        <ul>
+          <li>Historia</li>
+        </ul>
+      </div>
+      <div class="col social">
+        <h1>Redes Sociales</h1>
+        <ul>
+          <li><svg xmlns="http://www.w3.org/2000/svg" width="32" style="width: 32px;" fill="red" class="bi bi-instagram"
+              viewBox="0 0 16 16">
+              <path
+                d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z" />
+            </svg></li>
+          <li><svg xmlns="http://www.w3.org/2000/svg" width="32" style="width: 32px;" fill="red" class="bi bi-instagram"
+              viewBox="0 0 16 16">
+              <path
+                d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z" />
+            </svg></li>
+          <li><svg xmlns="http://www.w3.org/2000/svg" width="32" style="width: 32px;" fill="red" class="bi bi-instagram"
+              viewBox="0 0 16 16">
+              <path
+                d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z" />
+            </svg></li>
+
+        </ul>
+      </div>
+      <div class="clearfix"></div>
+    </div>
+  </div>
+  <!-- FIN DEL FOOTER -->
+
+</body>
+
+</html>
