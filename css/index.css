@@ -1,4 +1,3 @@
-
 header {
     display: flex;
     flex-direction: row;
@@ -34,6 +33,7 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
+<<<<<<< HEAD
     height: 20rem;
 }
 
@@ -55,4 +55,7 @@ body {
 .ofertas img {
     width: 400px;
     height: 200px;
+=======
+    height: 1000px;
+>>>>>>> 6ee93539f8e8f7c35698a54bfcb5d942e086b1d5
 }
