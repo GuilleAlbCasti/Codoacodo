@@ -28,34 +28,104 @@ header {
 /*----------------------*/
 
 body {
-    /*background-image: linear-gradient(0deg,rgba(0,0,0,0.5),rgb(0,0,0,0.5));*/
+    background-image: linear-gradient(0deg,rgba(0,0,0,1),rgb(0,0,0,1));
     background-image: url(/IMG/bg-1.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-repeat: repeat;
+    background-size: 100% 100%;
     background-position: center center;
-<<<<<<< HEAD
-    height: 20rem;
 }
 
 .ofertas {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items:center;
     background-color:rgb(7,6,23);
     width: 40rem;
-    height: 20rem;
-    margin-left: 45rem;
+    height: 25rem;
+    margin: 3rem;
+    margin-left: 50rem;
     border: 1px solid #ffc600;
     border-radius: 0.8rem;
-    margin: 5rem;
     box-shadow: 0.5rem 0.5rem 1rem #ffc80081;
 }
 
+
 .ofertas img {
-    width: 400px;
-    height: 200px;
-=======
-    height: 1000px;
->>>>>>> 6ee93539f8e8f7c35698a54bfcb5d942e086b1d5
+    width: 35rem;
+    height: 20rem;
+    border-radius: 0.5rem;
+    border-bottom: 4px solid rgb(27, 23, 57);
+    border-right: 4px solid rgb(27,23,57);
+}
+
+.ofertas .carousel-inner img:hover {
+    cursor: pointer;
+    width: 37rem;
+    height: 22rem;
+    border-bottom: none;
+    border-right: none;
+}
+
+.estrenos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    background-color:rgb(7,6,23);
+    width: 40rem;
+    height: 25rem;
+    margin: 3rem;
+    margin-right: 50rem;
+    border: 1px solid #ffc600;
+    border-radius: 0.8rem;
+    box-shadow: 0.5rem 0.5rem 1rem #ffc80081;
+}
+
+.estrenos img {
+    width: 35rem;
+    height: 20rem;
+    border-radius: 0.5rem;
+    border-bottom: 4px solid rgb(27, 23, 57);
+    border-right: 4px solid rgb(27,23,57);
+}
+
+.estrenos .carousel-inner img:hover {
+    cursor: pointer;
+    width: 37rem;
+    height: 22rem;
+    border-bottom: none;
+    border-right: none;
+}   
+
+.noticias {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    background-color:rgb(7,6,23);
+    width: 40rem;
+    height: 25rem;
+    margin: 3rem;
+    margin-left: 50rem;
+    border: 1px solid #ffc600;
+    border-radius: 0.8rem;
+    box-shadow: 0.5rem 0.5rem 1rem #ffc80081;
+}
+
+
+.noticias img {
+    width: 35rem;
+    height: 20rem;
+    border-radius: 0.5rem;
+    border-bottom: 4px solid rgb(27, 23, 57);
+    border-right: 4px solid rgb(27,23,57);
+}
+
+.noticias .carousel-inner img:hover {
+    cursor: pointer;
+    width: 37rem;
+    height: 22rem;
+    border-bottom: none;
+    border-right: none;
 }
