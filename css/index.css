@@ -165,3 +165,72 @@ body {
     width: 20rem;
     height: 20rem;
 }
+
+@media (max-width: 1023px) {
+
+    header {
+        height: 0%;
+        margin: 0%;
+        padding: 0%;
+    }
+    
+    .logo-1 {    
+        width: 6%;
+        margin-left: 8%;
+    }
+    
+    .logo-2 {
+        width: 30%;
+    }
+    
+    .logo-3 {
+        width: 10%;
+        height: 10%;
+        margin-right: 3%;
+    }
+
+    .presentacion {
+        height: 30%;
+    }
+
+    .ofertas {
+        padding-left: 5%;
+        padding-right: 10%;
+        gap: 5%;
+    }
+    
+    .ofertas img {
+        width:400px;
+        height: 260px;
+
+    }
+    
+    .ofertas .carousel-inner img:hover {
+        width: 450px;
+        height: 300px;
+    }
+
+    .estrenos {
+        padding-left: 5%;
+        padding-right: 10%;
+        gap: 5%;
+    }
+
+    .estrenos img {
+        width: 450px;
+        height: 300px;
+    }
+    /* ACA QUEDÉ POR HOY
+    .estrenos .carousel-inner img:hover {
+        cursor: pointer;
+        width: 37rem;
+        height: 22rem;
+        border-bottom: none;
+        border-right: none;
+    }   
+
+
+
+}
+
+@media (max-width: 767px) {}
