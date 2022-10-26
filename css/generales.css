@@ -39,7 +39,7 @@ a:hover {
 /* Definiendo barra de navegación */
 nav {
   background: #000000;
-  border: 1px solid #efb810;
+  border: 1px solid rgb(239, 184, 16);
   position: sticky;
   top: 0;
   z-index: 1000;
@@ -48,7 +48,7 @@ nav {
 nav a {
   text-decoration: none;
   display: block;
-  padding: 20px 30px;
+  padding: 20px 40px;
 
 }
 
@@ -58,6 +58,7 @@ nav ul {
   justify-content: flex-end;
   flex-wrap: wrap;
   list-style: none;
+  margin-bottom: 0rem;
 }
 
 nav ul li {
