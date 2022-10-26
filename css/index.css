@@ -166,8 +166,7 @@ body {
     height: 20rem;
 }
 
-@media (max-width: 1023px) {
-
+@media (max-width: 540vw) {
     header {
         height: 0%;
         margin: 0%;
@@ -175,62 +174,199 @@ body {
     }
     
     .logo-1 {    
-        width: 6%;
+        width: 5%;
         margin-left: 8%;
     }
     
     .logo-2 {
-        width: 30%;
+        width: 35%;
     }
     
     .logo-3 {
-        width: 10%;
-        height: 10%;
+        width: 12%;
+        height: 12%;
         margin-right: 3%;
     }
 
+    ul {
+        max-width: 100%;
+        margin: -5px -16px -5px -16px;
+    }
+
+    li {
+        font-size: 10px;
+        margin: 0;
+        padding: 0;
+    }
+
     .presentacion {
-        height: 30%;
+        max-width: 100%;
+    }
+
+    .presentacion h1 {
+        max-width: 280px;
+        font-size: 22px;
+        padding-top: 20px;
+    }
+
+    .presentacion p {
+        max-width: 270px;
+        font-size: 12px;
+    }
+
+    .presentacion a {
+        font-size: 12px;
+        margin: 0px 0px 0px 120px ;
     }
 
     .ofertas {
-        padding-left: 5%;
-        padding-right: 10%;
-        gap: 5%;
+        flex-direction: column;
+        padding: 80px;
+        width: 100%;
+        height: 280px;
+        padding-top: 120px;
+    }
+    
+    .anuncio p {
+        color:whitesmoke;
+        text-align: center;
+        font-size: 22px;
+    }
+
+    .anuncio a {
+        color:whitesmoke;
+        text-align: center;
+        font-size: 12px;
     }
     
     .ofertas img {
-        width:400px;
-        height: 260px;
-
-    }
-    
-    .ofertas .carousel-inner img:hover {
-        width: 450px;
-        height: 300px;
+        visibility: hidden;
+        width: 10px;
+        height: 10px;
     }
 
     .estrenos {
-        padding-left: 5%;
-        padding-right: 10%;
-        gap: 5%;
+        flex-direction: column;
+        padding: 80px;
+        width: 100%;
+        height: 280px;
+        padding-bottom: 120px;
     }
-
+    
     .estrenos img {
-        width: 450px;
-        height: 300px;
+        visibility: hidden;
+        width: 10px;
+        height: 10px;
     }
-    /* ACA QUEDÉ POR HOY
-    .estrenos .carousel-inner img:hover {
-        cursor: pointer;
-        width: 37rem;
-        height: 22rem;
-        border-bottom: none;
-        border-right: none;
-    }   
 
-
-
+    .noticias {
+        flex-direction: column;
+        padding: 80px;
+        width: 100%;
+        height: 280px;
+        padding-top: 120px;
+    }
+    
+    .noticias img {
+        visibility: hidden;
+        width: 10px;
+        height: 10px;
+    }
+    
+    .informacion {
+        flex-direction: column;
+        padding: 80px;
+        width: 100%;
+        height: 280px;
+    }
+    
+    .informacion img {
+        visibility: hidden;
+        width: 10px;
+        height: 10px;
+    }
 }
 
-@media (max-width: 767px) {}
+@media (min-width: 768vw), (max-width: 920vw) {
+    header {
+        height: 0%;
+        margin: 0%;
+        padding: 0%;
+        justify-content: space-around;
+    }
+    
+    
+    .logo-1 {    
+        width: 5%;
+        margin-left: -5%;
+    }
+    
+    .logo-2 {
+        width: 22%;
+    }
+    
+    .logo-3 {
+        width: 8%;
+        height: 8%;
+        margin-right: 22%;
+    }
+
+    nav ul {
+        display: flex;
+        justify-content: center;
+    }
+
+    ul li a {
+        margin: 0;
+        padding: 1px 10px 1px 10px;
+    }
+
+    .presentacion {
+        max-width: 100%;
+    }
+
+    .presentacion h1 {
+        max-width: 260px;
+        font-size: 20px;
+        padding-top:10px;
+    }
+
+    .presentacion p {
+        max-width: 240px;
+        font-size: 12px;
+    }
+
+    .presentacion a {
+        font-size: 12px;
+        margin: 0px 0px 0px 80px ;
+    }
+
+    .ofertas {
+        flex-direction: row;
+        justify-content:space-around;
+        height: 350px;
+    }
+    
+    .anuncio p {
+        font-size: 24px;
+        width: 200px;
+    }
+
+    .anuncio a {
+        font-size: 12px;
+        padding: 5% 0% 5% 0%;
+    }
+
+    .contenedor {
+        padding: 0% 30% 0% 0%;
+
+    }
+    
+    .ofertas img {
+        visibility: visible;
+        width: 15rem;
+        height: 10rem;
+    }
+    
+
+}
