@@ -13,29 +13,19 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;700&display=swap" rel="stylesheet">
   <!--VINCULAR ICONOS DE FONTAWESOME-->
-
-  <title>Newsletter - Cine Codo 4.0</title>
-
-  <script type="text/javascript">
-    function cargarIframe(url) {
-      document.getElementById("tlerfrm").style.visibility = "visible";
-      document.getElementById("iframetrailer").src = url;
-    }
-
-    function cerrarIframe() {
-      document.getElementById("tlerfrm").style.visibility = "hidden";
-      document.getElementById("iframetrailer").src = "";
-    }
-//link del trailer de sinister "https://www.youtube.com/embed/_kbQAJR9YWQ"
-  </script>
-</head>
-
-<body>
+   <title>Newsletter - Cine Codo 4.0</title>
+  </head>
+  <body>
   <header>
     <img src="img/logostudio.svg" alt="logo studio codo 4.0">
     <h1>STUDIO CODO 4.0</h1>
+    <div class="menu_ham">
+      <span class="line1__menu_ham"></span>
+      <span class="line2__menu_ham"></span>
+      <span class="line3__menu_ham"></span>
+    </div>
   </header>
-  <nav>
+  <nav class="navebar">
     <ul>
       <li><a href="index.html" target="_self">Inicio</a></li>
       <li><a href="peliculas.html" target="_self">Películas</a></li>
@@ -44,6 +34,7 @@
       <li><a href="newsletter.html" target="_self">Contactanos</a></li>
 
     </ul>
+    
   </nav>
 
   <!--el siguiente div contiene al iframe donde se reproducen los trailers según el click-->
@@ -322,6 +313,8 @@
     </div>
   </div>
   <!-- FIN DEL FOOTER -->
+  <script src="js/general.js"></script>
+  <script src="js/peliculas.js"></script>
 </body>
 
 </html>

@@ -214,8 +214,16 @@ footer h3 {
   .footer .col ul li {
     font-size: 13px;
   }
-}
 
+
+.trailerframe {
+  display: block;
+  position: fixed;
+  width: 100vw;
+  height: 60vh;
+  margin:-10vh 0vw;
+}
+}
 @media only screen and (max-width: 500px) {
   .footer .col {
     width: 50%;
