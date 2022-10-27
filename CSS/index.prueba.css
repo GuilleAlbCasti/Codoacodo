@@ -27,10 +27,6 @@ a:hover {
     color: rgb(218,53,47);
 }
 
-header img #logo-2 {
-    height: 5rem;
-}
-
 nav ul li {
     text-align: center;
     font-size: 1rem;
@@ -51,6 +47,30 @@ button {
     border-bottom: 4px solid rgb(50,50,50);
     border-right: 4px solid  rgb(50,50,50);
 }
+
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(7,6,23);
+    gap: 0.2rem;
+    font-family: 'Open Sans', sans-serif;
+    color: aliceblue;
+    font-weight: 200;
+    padding: auto auto;
+    text-align: center;
+    height: auto;
+}
+
+.logo-1 {
+    display: none;
+}
+
+.logo-3 {
+    display: none;
+}
+
 .presentacion {
     background-image: url("/IMG/bg-1.jpg");
     background-repeat: no-repeat;
@@ -125,29 +145,18 @@ button {
     margin-top: 1rem;
 }
 
-footer {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    background-color: rgb(7,6,23);
-    gap: 0.2rem;
-    font-family: 'Open Sans', sans-serif;
-    color: aliceblue;
-    font-weight: 200;
-    padding: auto auto;
-    text-align: center;
-    height: auto;
+.galeria {
+    display: none;
 }
 
-.footer .col {
-    display: block;
-    text-align: center;
+
+
+.footer .colu {
     width: 250px;
     float: left;
 }
 
-.footer .col h1 {
+.footer .colum h1 {
     font-size: 13px;
     line-height: 17px;
     padding: 20px 0px 5px 0px;
@@ -157,11 +166,11 @@ footer {
     letter-spacing: 0.250em;
 }
 
-.footer .col ul {
+.footer .colum ul {
     list-style-type: none;
 }
 
-.footer .col ul li a {
+.footer .colum ul li a {
     color: #999999;
     font-size: 14px;
     font-family: inherit;
@@ -178,7 +187,7 @@ footer {
     padding-right: 5px;
 }
 
-.footer .col ul li a:hover {
+.footer .colum ul li a:hover {
     color: #ffffff;
     transition: .1s;
     -webkit-transition: .1s;
@@ -187,4 +196,176 @@ footer {
 
 .contain {
     padding: 2% 8%;
+}
+
+@media (min-width: 760px) {
+    header {
+        height: 9rem;
+        text-align: center;
+    }
+
+    .logos {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    .logo-1 {
+        display:inline;    
+        width: 6rem;
+        margin-left: 2rem;
+        margin-bottom: 1rem;
+    }
+        
+    .logo-3 {
+        display: inline;
+        width: 8rem;
+        height: 8rem;
+        margin-right: 1rem;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: row;
+        justify-content:end;
+        align-items: center;
+        list-style: none;
+    }
+
+    nav ul li {
+        width: 150px;
+        padding:0.5rem;
+    }
+
+    button {
+        font-weight: 550;
+        padding:1rem 3rem;
+        font-size: 1rem;
+    }
+
+    .presentacion {
+        height: 43rem;
+    }
+
+    .cuadro {
+        max-width: 60rem;
+        text-align:justify;
+        padding: 5rem 0rem 10rem 25rem;
+    }
+    
+    .cuadro h2 {
+        text-align: center;
+        font-size: 4rem;
+        color: rgb(7,6,23);
+        font-weight: 500;
+    }
+    
+    .cuadro h3 {
+        text-align: center;
+        font-size: 2rem;
+        color: rgb(7,6,23);
+        font-weight: 550;
+        padding-bottom: 2rem;
+    }
+    
+    .cuadro p {
+        display: inline;
+    }
+    
+    .cuadro hr {
+        margin: 1.5rem;
+    }
+
+    .boton-1 {
+        margin-left: 20rem;
+        margin-top: 4rem;
+    } 
+
+    .caja1 {
+        height: 40rem;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+        padding: 1rem 1rem;
+    }
+    
+    .caja2 {
+        height: 30rem;
+    }
+
+    .texto {
+        max-width: 80rem;
+        text-align: center;
+        padding: 4.7rem 4.7rem;
+    }
+    
+    .texto h3 {
+        font-weight: 150;
+        padding-bottom: 0.2em;
+        font-size: 2rem;
+    }
+    
+    .texto-1 {
+        margin: auto auto;
+        max-width: 40rem;
+        text-align: center;
+    }
+    
+    .texto-1 h3 {
+        padding: 0.5rem;
+        font-weight: 400;
+        font-size: 1.6rem;
+    }
+    
+    .texto-1 button {
+        margin-top: 0.2rem;
+    }
+
+    .galeria {
+        display: flex;
+        width: 1800px;
+        height: 600px;
+        text-align: center;
+        justify-content: space-between;
+    }
+    
+    .galeria img {
+        top: 0;
+        left: 0;
+        opacity: 0;
+        transition: opacity 3s;
+        gap:7rem;
+    }
+    
+    .galeria input[type=radio] {
+        bottom: calc(1000px - 3em);
+        left: 1em;
+    }
+    
+    .galeria input[type=radio]:nth-of-type(1):checked ~ img:nth-of-type(1) {
+        opacity: 1;
+    }
+    
+    .galeria input[type=radio]:nth-of-type(2):checked ~ img:nth-of-type(2) {
+        opacity: 1;
+    }
+    
+    .galeria input[type=radio]:nth-of-type(3):checked ~ img:nth-of-type(3) {
+        opacity: 1;
+    }
+    
+    .galeria input[type=radio]:nth-of-type(4):checked ~ img:nth-of-type(4) {
+        opacity: 1;
+    }
+
+    .galeria input[type=radio]:nth-of-type(5):checked ~ img:nth-of-type(5) {
+        opacity: 1;
+    }
+
+    .galeria input[type=radio]:nth-of-type(6):checked ~ img:nth-of-type(6) {
+        opacity: 1;
+    }
 }
