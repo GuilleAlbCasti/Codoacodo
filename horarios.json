@@ -1,0 +1,42 @@
+{
+	"peliculas": [
+		{
+			"titulo": "Interstellar",
+			"director": "",
+			"horarios": [
+				"12:00",
+				"16:30",
+				"20:30",
+				"22:30"
+			]
+		},
+		{
+			"titulo": "TopGun 2:Maverick",
+			"director": "",
+			"horarios": [
+				"14:30",
+				"17:00",
+				"19:40",
+				"21:30"
+			]
+		},
+		{
+			"titulo": "The Naked Gun 33 1/3",
+			"director": "",
+			"horarios": [
+				"17:00",
+				"21:00"
+			]
+		},
+		{
+			"titulo": "Me before you",
+			"director": "",
+			"horarios": [
+				"15:40",
+				"17:20",
+				"19:30",
+				"21:15"
+			]
+		}
+	]
+}

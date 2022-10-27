@@ -36,7 +36,12 @@ a:hover {
 }
 
 
+
 /* Definiendo barra de navegación */
+.menu_ham {
+  display:none;
+}
+
 nav {
   background: #000000;
   border: 1px solid #efb810;
@@ -236,19 +241,80 @@ footer h3 {
 }
 
 /*RESPONSIVE DE NAV BAR */
-
-@media only screen and (max-width: 600px) {
-  nav {
-    position: relative;
+@media only screen and (max-width:720px) {
+  nav a {
+    padding : 20px 15px;
   }
 
+}
+
+
+@media only screen and (max-width: 600px) {
+  /*definiendo el menu hamburguesa animado para mobile*/
+
+.menu_ham {
+  position:fixed;
+  top:10px;
+  right:10px;
+  display:block;
+  width:30px;
+  height:30px;
+  cursor:pointer;
+  margin-left:20px;
+  z-index:1000;
+}
+.menu_ham span {
+display:block;
+width:100%;
+height:2px;
+background:#efb810;
+margin-top:6px;
+transition:all 300ms;
+transform-origin:0px 100%;
+}
+
+.activeLine1__menu_ham {
+  transform:rotate(45deg) translate(-2px, 1px);
+}
+.activeLine2__menu_ham {
+  opacity:0;
+  margin-left:-30px;
+}
+
+.activeLine3__menu_ham {
+  transform:rotate(-45deg) translate(-4px, 2px);
+}
+.navebar {
+  display:block;
+  position:fixed;
+  top:0;
+  left:0;
+  background:#000000;
+  color:rgb(255, 255, 255);
+  width:100vw;
+  height:100vh;
+  border:none;
+  z-index:500;
+  transform:translateX(-100%);
+  transition:all 300ms ease-in;
+}
+
+.activenavbar{
+  transform:translateX(0%)
+}      
+    
+
   nav ul {
+    margin-top:20vh;
+    display:flex;
     flex-direction: column;
-    align-items: center;
+    justify-content:space-around;
+    row-gap:3em;
   }
 
   nav ul li {
     width: 100%;
+    font-size:2em;
   }
 
   nav a {
@@ -257,4 +323,5 @@ footer h3 {
     padding: 5px 30px;
 
   }
+
 }
