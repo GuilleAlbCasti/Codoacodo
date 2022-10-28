@@ -1,208 +1,37 @@
-
-.presentacion {
-    background-image: linear-gradient(0deg,rgba(0,0,0,1),rgb(0,0,0,1));
-    background-image: url("/IMG/bg-1.jpg");
-    background-repeat: repeat;
-    background-size: 100% 100%;
-    background-position: center center;
-    height: 26rem;
-}
-
-.ofertas {
-    background-color: rgb(7,6,23);
-    display: flex;
-    flex-direction: row;
-    justify-content:space-around;
-    align-items: center;
-    padding-left: 5rem;
-    padding-right: 5rem;
-    gap: 2rem;
-}
-
-.anuncio {
+* {
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
     color:whitesmoke;
+}
+
+header {
+    background-color:rgb(7,6,23);
+    height: 7rem;
     text-align: center;
 }
-.contenedor {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items:center;
-    width: 40rem;
-    height: 25rem;
+
+nav {
+    background: #000000;
+    border: 1px solid rgb(239, 184, 16);
 }
 
-.ofertas img {
-    width: 35rem;
-    height: 20rem;
-    border-radius: 0.5rem;
-    border-bottom: 4px solid #ffc8007c;
-    border-right: 4px solid #ffc8007c;
+a {
+    text-decoration: none;
+    color: rgb(255,189,89);
 }
 
-.ofertas .carousel-inner img:hover {
-    cursor: pointer;
-    width: 37rem;
-    height: 22rem;
-    border-bottom: none;
-    border-right: none;
+a:hover {
+    color: rgb(218,53,47);
 }
 
-.estrenos {
-    background-color:rgb(218,53,47);
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items:center;
-    padding-left: 5rem;
-    padding-right: 5rem;
-    gap: 2rem;
+nav ul li {
+    text-align: center;
+    font-size: 1rem;
 }
 
-.contenedorEstreno {
-    display:flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 40rem;
-    height: 25rem;
+nav ul li:hover {
+    background: #ffc600;
+    color: #000;
 }
-
-.estrenos img {
-    width: 35rem;
-    height: 20rem;
-    border-radius: 0.5rem;
-    border-bottom: 4px solid  #ffc8007c;
-    border-right: 4px solid  #ffc8007c;
-}
-
-.estrenos .carousel-inner img:hover {
-    cursor: pointer;
-    width: 37rem;
-    height: 22rem;
-    border-bottom: none;
-    border-right: none;
-}   
-
-.noticias {
-    background-color: rgb(7,6,23);
-    display: flex;
-    flex-direction: row;
-    justify-content:space-around;
-    align-items: center;
-    padding-left: 5rem;
-    padding-right: 5rem;
-    gap: 2rem;
-}
-
-.contenedorNoticias {
-    display:flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 40rem;
-    height: 25rem;
-}
-
-.noticias img {
-    width: 35rem;
-    height: 20rem;
-    border-radius: 0.5rem;
-    border-bottom: 4px solid rgb(27, 23, 57);
-    border-right: 4px solid rgb(27,23,57);
-}
-
-.noticias .carousel-inner img:hover {
-    cursor: pointer;
-    width: 37rem;
-    height: 22rem;
-    border-bottom: none;
-    border-right: none;
-}
-
-.informacion {
-    background-color:#da352f;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items:center;
-    padding-left: 1rem;
-    padding-right: 1rem;
-    gap: 1rem;
-}
-
-.informacion img {
-    width: 20rem;
-    height: 20rem;
-}
-
-/* SEGUIR TRABAJANDOLO
-
-@media (max-width: 1023px) {
-
-    header {
-        height: 0%;
-        margin: 0%;
-        padding: 0%;
-    }
-    
-    .logo-1 {    
-        width: 6%;
-        margin-left: 8%;
-    }
-    
-    .logo-2 {
-        width: 30%;
-    }
-    
-    .logo-3 {
-        width: 10%;
-        height: 10%;
-        margin-right: 3%;
-    }
-
-    .presentacion {
-        height: 30%;
-    }
-
-    .ofertas {
-        padding-left: 5%;
-        padding-right: 10%;
-        gap: 5%;
-    }
-    
-    .ofertas img {
-        width:400px;
-        height: 260px;
-
-    }
-    
-    .ofertas .carousel-inner img:hover {
-        width: 450px;
-        height: 300px;
-    }
-
-    .estrenos {
-        padding-left: 5%;
-        padding-right: 10%;
-        gap: 5%;
-    }
-
-    .estrenos img {
-        width: 450px;
-        height: 300px;
-    }
-    /* ACA QUEDÉ POR HOY
-    .estrenos .carousel-inner img:hover {
-        cursor: pointer;
-        width: 37rem;
-        height: 22rem;
-        border-bottom: none;
-        border-right: none;
-    }   
-
-
-
-}
-
-@media (max-width: 767px) {} */
