@@ -104,6 +104,11 @@ footer {
 .logo-1 {
     display: none;
 }
+
+.logo-2 {
+    width: 20rem;
+}
+
 .logo-3 {
     display: none;
 }
@@ -115,7 +120,7 @@ footer {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
-    height: 20rem;
+    height: 23rem;
 }
 .cuadro {
     margin: auto auto;
