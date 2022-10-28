@@ -48,6 +48,15 @@ button {
     border-right: 4px solid  rgb(50,50,50);
 }
 
+button:hover {
+    cursor: pointer;
+    background-color: rgb(239, 184, 16);
+    box-shadow: 0px 0px 5px 5px rgb(239, 184, 16);
+    border-bottom: none;
+    border-right: none;
+    font-size: 1rem;
+}
+
 footer {
     display: flex;
     flex-direction: row;
@@ -116,6 +125,20 @@ footer {
     height: 20rem;
 }
 
+.caja3 {
+    background-color: rgb(7,6,23);
+    height: 20rem;
+}
+
+.caja4 {
+    background-color: rgb(218,53,47);
+    height: 20rem;
+}
+
+.portaretrato {
+    display: none;
+}
+
 .texto {
     margin: auto auto;
     max-width: 30rem;
@@ -145,11 +168,9 @@ footer {
     margin-top: 1rem;
 }
 
-.galeria {
+.noticias {
     display: none;
 }
-
-
 
 .footer .colu {
     width: 250px;
@@ -245,13 +266,13 @@ footer {
     }
 
     .presentacion {
-        height: 43rem;
+        height: 47rem;
     }
 
     .cuadro {
-        max-width: 60rem;
+        max-width: 70rem;
         text-align:justify;
-        padding: 5rem 0rem 10rem 25rem;
+        padding: 3rem 0rem 3rem 35rem;
     }
     
     .cuadro h2 {
@@ -422,9 +443,8 @@ footer {
         display:flex;
         flex-direction: row;
         justify-content:space-around;
-        align-items:baseline;
-        gap: 10%;
-        padding: 0% 30%;
+        align-items:center;
+        width: 100vw;
     }
 
 
