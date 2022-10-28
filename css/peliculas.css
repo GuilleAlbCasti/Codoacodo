@@ -7,11 +7,11 @@
   position: fixed;
   width: 75vw;
   height: 80vh;
-  margin: -7vh 12.5vw;
+  margin: -2vh 12.5vw;
   background-color: rgb(0, 0, 0);
   padding: 2vh;
   border: 2px solid #070617;
-  z-index: 1000;
+  z-index: 300;
   visibility: hidden;
 }
 
@@ -214,8 +214,16 @@ footer h3 {
   .footer .col ul li {
     font-size: 13px;
   }
-}
 
+
+.trailerframe {
+  display: block;
+  position: fixed;
+  width: 100vw;
+  height: 60vh;
+  margin:5vh 0vw;
+}
+}
 @media only screen and (max-width: 500px) {
   .footer .col {
     width: 50%;
