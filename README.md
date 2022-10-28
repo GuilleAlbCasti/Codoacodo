@@ -17,6 +17,6 @@ El repositorio del proyecto se encuentra ubicado en:
 
 El proyecto se encuentra almacenado en un servidor on-line siendo su ruta:
 
-- 
+- https://studio-codo-a-codo.netlify.app/
 
 
