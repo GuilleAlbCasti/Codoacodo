@@ -1,4 +1,4 @@
-/*DEFINIENDO ASPECTOS GENERALES*/
+/*------------------DEFINIENDO ASPECTOS GENERALES------------------*/
 
 * {
     box-sizing: border-box;
@@ -18,8 +18,8 @@ a {
     color: #f96905;
 }
 
-/* DEFINIENDO ASPECTOS DEL NAVGADOR*/
-/* ANIMACIÓN DE MENÚ*/
+/* ------------------DEFINIENDO ASPECTOS DEL NAVGADOR------------------*/
+/* ------------------ANIMACIÓN DE MENÚ------------------*/
 .menu_ham {
     display:none;
   }
@@ -250,7 +250,7 @@ button:hover {
 .copy p {
     color:#f96905;
     font-weight: 300;
-    font-size: 15px;
+    font-size: 12px;
     text-align: center;
 }
 
@@ -606,24 +606,23 @@ button:hover {
         width: 50%;
     }
     
-    .copy p {
-        color:#f96905;
-        font-weight: 300;
-        font-size: 15px;
-        text-align: center;
-    }
-    
     .social ul {
         display:none;
     }
     
     .colum h1:hover {
-        color: #ffffff;
+        color:#dbad20;
         transition: .1s;
         -webkit-transition: .1s;
         -moz-transition: .1s;
         cursor:pointer;
         font-size: 13px;
+    }
+
+    .colum:hover > ul{
+        display: block;
+        padding-bottom: 1rem;
+        float:inline-start;     
     }
 }
 
@@ -635,12 +634,6 @@ button:hover {
 
     .descripcion {
         width: 100%;
-    }
-
-    .colum:hover > ul{
-        display: block;
-        padding-bottom: 1rem;
-        float:inline-start;     
     }
 
     .copy {
