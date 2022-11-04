@@ -189,21 +189,46 @@ button:hover {
 
 /*DEFINIENDO EL ASPECTO DEL FOOTER*/
 
-.footer .colum h1 {
+.footer {
     display: flex;
     flex-direction: row;
-    font-size: 13px;
-    line-height: 17px;
-    padding: 20px 0px 5px 0px;
+    background-color: #070617;
+    width: 100%;
+    
+}
+
+.descripcion {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: baseline;
+    width: 80%;
+    padding: 2rem 1rem;
+}
+
+.colum {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.colum h1 {
+    font-size: 12px;
+    padding-bottom: 1rem;
     color: rgba(255, 255, 255, 0.2);
-    font-weight: 500;
-    text-transform: uppercase;
-    letter-spacing: 0.250em;
+    font-weight: 400;
+    text-transform:uppercase;
+    letter-spacing: 0.150em;
 }
-.footer .colum ul {
+
+.colum ul {
     list-style-type: none;
+    text-align: center;
+    display: visibility;
 }
-.footer .colum ul li a {
+
+.colum ul li a {
+    
     color: #999999;
     font-size: 14px;
     font-family: inherit;
@@ -214,19 +239,33 @@ button:hover {
     -webkit-transition: .2s;
     -moz-transition: .2s;
 }
-.social ul li {
-    display: inline-block;
-    padding-right: 5px;
+
+.copy {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
 }
-.footer .colum ul li a:hover {
+
+.copy p {
+    color:#f96905;
+    font-weight: 300;
+    font-size: 15px;
+    text-align: center;
+}
+
+.social ul {
+    display: flex;
+    gap:0.9rem;
+}
+
+.colum a:hover {
     color: #ffffff;
     transition: .1s;
     -webkit-transition: .1s;
     -moz-transition: .1s;
 }
-.contain {
-    padding: 2% 8%;
-}
+
 
 /*DANDOLE EL ASPECTO MOBILE*/
 
@@ -546,3 +585,66 @@ button:hover {
       padding: 5px 30px;
     }
 }  
+
+/*DEFINIENDO EL FOOTER RESPONSIVE*/
+@media (max-width: 840px) {
+
+    .descripcion {
+        flex-direction: column;
+        align-items: center;
+        width: 50%;
+    }
+    
+    .colum ul {
+        display: none;
+    }
+        
+    .copy {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 50%;
+    }
+    
+    .copy p {
+        color:#f96905;
+        font-weight: 300;
+        font-size: 15px;
+        text-align: center;
+    }
+    
+    .social ul {
+        display:none;
+    }
+    
+    .colum h1:hover {
+        color: #ffffff;
+        transition: .1s;
+        -webkit-transition: .1s;
+        -moz-transition: .1s;
+        cursor:pointer;
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 600px) {
+    .footer {
+        display: flex;
+        flex-direction:column;
+    }
+
+    .descripcion {
+        width: 100%;
+    }
+
+    .colum:hover > ul{
+        display: block;
+        padding-bottom: 1rem;
+        float:inline-start;     
+    }
+
+    .copy {
+        padding-bottom: 2rem;
+        width: 100%;
+    }
+}
