@@ -1,0 +1,129 @@
+/*REALIZANDO ESTILOS DE LOS BOTONES PARA DESPLAZARSE ENTRE PÁGINAS*/
+.movies {
+  position: relative;
+}
+
+.paginacion {
+  position: sticky;
+  top:6.8%;
+  background:rgb(7,6,23);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  padding: 1.5rem;
+}
+
+.paginacion button {
+  cursor: pointer;
+  border: none;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 3rem;
+  width: 20rem;
+  background: rgb(239, 184, 16);
+  color:  rgb(7,6,23);
+  border-radius: 100px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 600;
+  transition: .3s ease all;;
+}
+
+/* CONTENEDORES DE IMAGENES */
+
+/*contenedor de todas las imàgens de pelìculas ingresadas en flex*/
+.contenedor {
+  max-width: 10000px;
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content:space-around;
+  background-color: rgb(218,53,47);
+}
+
+
+
+/*contenedor principal que define el tamaño de las imàgenes*/
+.contenedorimagen {
+  position: relative;
+  width: 600px;
+  height: 600px;
+  margin: 1em 0em;
+}
+
+/*caracterìsticas de las imàgenes dentro de los contenedores*/
+.banner {
+  /*display: block;*/
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/*contenedor que aparece sobre la imàgen de cada pelicula semitrasparente */
+.textoimagen {
+  position: absolute;
+  width: 100%;
+  height: 0;
+  left: 0;
+  top: 0;
+  background: rgba(10, 20, 20, .7);
+  overflow: hidden;
+  transition: .5s ease;
+}
+
+/* contenedor que organiza el texto dentro del cuadro de pelicula */
+.divtexto {
+  /*position: relative;*/
+  text-align: left;
+  padding: 2rem;
+}
+
+/*estado hover donde el contenedor semitrasparente se hace presente*/
+.contenedorimagen:hover .textoimagen {
+  height: 100%;
+}
+
+/*div donde se reproducen los trailers en iframes*/
+
+.trailerframe {
+  /*display: block;*/
+  position: fixed;
+  width: 75vw;
+  height: 80vh;
+  margin: -2vh 12.5vw;
+  background-color: rgb(0, 0, 0);
+  padding: 2vh;
+  border: 2px solid #070617;
+  z-index: 300;
+  visibility: hidden;
+}
+
+/*estilo de los botones del frame de trailers*/
+.btnTrailer {
+  /*display: block;*/
+  width: 100%;
+  height: 3em;
+  background: #efb810;
+  color: #fff;
+}
+
+.textoimagen button {
+  position: absolute;
+  bottom:5px;
+}
+
+
+
+@media only screen and (max-width: 950px) {
+  
+  .trailerframe {
+    display: block;
+    /*position: fixed;*/
+    width: 100vw;
+    height: 60vh;
+    margin:5vh 0vw;
+  }
+}

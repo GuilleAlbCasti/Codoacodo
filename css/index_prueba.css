@@ -187,6 +187,39 @@ button:hover {
     display: none;
 }
 
+/*--------TRABAJANDO SOBRE LA SECCIÓN DE PELICULAS--------
+
+.contenedor {
+    max-width: 10000px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 3rem;
+    background-color: rgb(218,53,47);
+    padding: 2%;
+}
+
+.contenedor .pelicula {
+    text-align: center;
+}
+
+.contenedor .pelicula .titulo {
+    font-size: 2.5rem;
+    font-weight: 500;
+    color:#000;
+}
+
+.contenedor .pelicula .resumen {
+    font-size: 16px;
+    font-weight: 300;
+    color:#000;
+}
+
+.contenedor .pelicula .poster {
+    width: 28rem;
+    height: 40rem;
+    border-radius: 0.8rem;
+}
+*/
 /*DEFINIENDO EL ASPECTO DEL FOOTER*/
 
 .footer {
